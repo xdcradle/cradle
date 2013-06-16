@@ -1,0 +1,439 @@
+<!--By Cradle Team 2013-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/usr_ctr_template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>摇篮网-Cradle-发现价值，孕育希望</title>
+<!-- InstanceEndEditable -->
+<link href="css/usr-center-style.css" rel="stylesheet" type="text/css" />
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+
+<body>
+<div class="topbar-wrapper">
+  <div class="topbar"> 
+							<ul>
+                            	<li><a href="#" nouserface="true">黄崛</a></li>
+								<li><a href="#" nouserface="true">我的摇篮</a></li>
+								<li><a href="#">账号设置</a></li>
+								<li><a href="#">查看消息</a></li>
+                                <li><a href="login.htm" >退出</a></li>
+								<div class="clear"></div>
+							</ul>
+  </div>
+</div>
+<div class="bg-wrapper">
+  <div class="main-container">
+    <div class="header">
+      <div class="header-left"> <a href="#"><img src="images/logo.png" width="160" height="71" alt="摇篮网logo" /></a> </div>
+      <div class="header-right">
+        <div class="searchbar-wrapper">
+          <form method="get" target="_self" action="#">
+              <span class="search-input-wrapper">
+                <input id="kw" class="search-input" type="text" maxlength="100" name="wd" autocomplete="off" />
+              </span>
+              <span class="search-btn-wrapper"><input value="搜 索" id="search-btn" type="submit" /></span>
+            <span class="option-wrapper">
+              <input id="sp0" name="sp" type="radio" />
+              <label for="sp0">用户</label>
+              <input id="sp1" name="sp" type="radio" />
+              <label for="sp1">团队</label>
+              <input id="sp2" name="sp" type="radio" />
+              <label for="sp2">项目</label>
+              <input id="sp3" name="sp" type="radio" />
+              <label for="sp3">擅长点</label>
+              <input id="sp4" name="sp" type="radio" />
+              <label for="sp4">关注点</label>
+            </span>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="navi">
+        <div class="navi-left"> </div>
+        <ul>
+          <li><a href="index.html">首页</a></li>
+          <li><a href="user_center.html">个人中心</a></li>
+          <li><a href="#">好友</a></li>
+          <li><a href="#">摇篮应用</a></li>
+        </ul>
+        <div class="navi-right"> </div>
+      </div>
+      <div class="sidebar-left">
+        <div class="user-avatar-wrapper"> <a class="avatar" href="#"><img src="images/user-avatar.jpg" width="50" height="50" /></a>
+          <div class="user-info">
+            <div class="user-name"> <a class="name" title="黄崛" href="#">黄崛</a> </div>
+          </div>
+        </div>
+        <div class="user-apps">
+          <h3> <a class="more" ui-async="async" href="#">更多</a>我的应用 </h3>
+          <div class="apps-item">
+            <div class="item-title selected"> <a ui-async="async" href="user_center.html"><img class="icon" src="images/app.png" width="16" height="16" />个人中心</a> </div>
+          </div>
+          <div class="apps-item">
+            <div class="item-title selected"> <a ui-async="async" href="#"><img class="icon" src="images/app.png" width="16" height="16" />我的团队</a> </div>
+          </div>
+          <div class="apps-item">
+            <div class="item-title selected"> <a ui-async="async" href="#"><img class="icon" src="images/app.png" width="16" height="16" />快速匹配</a> </div>
+          </div>
+          <div class="apps-item">
+            <div class="item-title selected"> <a ui-async="async" href="#"><img class="icon" src="images/app.png" width="16" height="16" />项目发布</a> </div>
+          </div>
+          <div class="apps-item">
+            <div class="item-title selected"> <a ui-async="async" href="#"><img class="icon" src="images/add_app_icon.png" width="16" height="16" />添加应用</a> </div>
+          </div>
+        </div>
+      </div>
+      <!-- InstanceBeginEditable name="EditRegion3" -->
+      <div class="content">
+        <div class="location"> <span>当前位置：<a href="index.html">首页</a>-&gt;个人中心</span> </div>
+        <div id="app_cnt2" style="position:relative;">
+          <h2 class="panel_title">基本信息</h2>
+          <form name="myform" method="post" onsubmit="return chkform()" id="myform">
+            <div>
+              <input name="__VIEWSTATE" id="__VIEWSTATE" value="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" type="hidden">
+            </div>
+            <script type="text/javascript" src="/ajax/common.ashx"></script><script type="text/javascript" src="/ajax/ASP.PageClass,App_Web_ytcyy-5f.ashx?p=FFnUrCAY9ebzalXN_zt0mOPp-7n4RquGd6Jl87atn2c1"></script>
+            <div id="Editbox" class="Editbox"> </div>
+            <div id="EditboxCity" class="Editbox"> </div>
+            <input id="province" name="province" value="" type="hidden">
+            <input id="city" name="city" value="" type="hidden">
+            <table id="tbl_baseInfo" style="margin:15px 0 0px 0;margin-left:20px" align="center" border="0" cellspacing="5px" width="90%">
+              <tbody>
+                
+                <tr>
+                  <td class="pl_l" align="right">真实姓名：</td>
+                  <td class="pl_r"><span id="span_city">黄崛 </span></td>
+                </tr>
+                <tr>
+                  <td align="right" width="100px">性别：</td>
+                  <td><table id="lstGender" border="0">
+                      <tbody>
+                        <tr>
+                          <td><span class="mr5">
+                            <input id="lstGender_0" name="lstGender" value="1" checked="checked" type="radio">
+                            <label for="lstGender_0">男</label>
+                            </span></td>
+                          <td><span class="mr5">
+                            <input id="lstGender_1" name="lstGender" value="0" type="radio">
+                            <label for="lstGender_1">女</label>
+                            </span></td>
+                        </tr>
+                      </tbody>
+                    </table></td>
+                </tr>
+                <tr>
+                  <td align="right">生日：</td>
+                  <td class="pl_r pl_border"><input style="display: none;" name="txtBirthday" id="txtBirthday" class="date" value="1990-12-6" type="text">
+                    <span class="jSelectDateBorder date" id="spanDate1">
+                    <select class="date" id="selYear1">
+                      <option value="2013">2013</option>
+                      <option value="2012">2012</option>
+                      <option value="2011">2011</option>
+                      <option value="2010">2010</option>
+                      <option value="2009">2009</option>
+                      <option value="2008">2008</option>
+                      <option value="2007">2007</option>
+                      <option value="2006">2006</option>
+                      <option value="2005">2005</option>
+                      <option value="2004">2004</option>
+                      <option value="2003">2003</option>
+                      <option value="2002">2002</option>
+                      <option value="2001">2001</option>
+                      <option value="2000">2000</option>
+                      <option value="1999">1999</option>
+                      <option value="1998">1998</option>
+                      <option value="1997">1997</option>
+                      <option value="1996">1996</option>
+                      <option value="1995">1995</option>
+                      <option value="1994">1994</option>
+                      <option value="1993">1993</option>
+                      <option value="1992">1992</option>
+                      <option value="1991">1991</option>
+                      <option value="1990">1990</option>
+                      <option value="1989">1989</option>
+                      <option value="1988">1988</option>
+                      <option value="1987">1987</option>
+                      <option value="1986">1986</option>
+                      <option value="1985">1985</option>
+                      <option value="1984">1984</option>
+                      <option value="1983">1983</option>
+                      <option value="1982">1982</option>
+                      <option value="1981">1981</option>
+                      <option value="1980">1980</option>
+                      <option value="1979">1979</option>
+                      <option value="1978">1978</option>
+                      <option value="1977">1977</option>
+                      <option value="1976">1976</option>
+                      <option value="1975">1975</option>
+                      <option value="1974">1974</option>
+                      <option value="1973">1973</option>
+                      <option value="1972">1972</option>
+                      <option value="1971">1971</option>
+                      <option value="1970">1970</option>
+                      <option value="1969">1969</option>
+                      <option value="1968">1968</option>
+                      <option value="1967">1967</option>
+                      <option value="1966">1966</option>
+                      <option value="1965">1965</option>
+                      <option value="1964">1964</option>
+                      <option value="1963">1963</option>
+                      <option value="1962">1962</option>
+                      <option value="1961">1961</option>
+                      <option value="1960">1960</option>
+                      <option value="1959">1959</option>
+                      <option value="1958">1958</option>
+                      <option value="1957">1957</option>
+                      <option value="1956">1956</option>
+                      <option value="1955">1955</option>
+                      <option value="1954">1954</option>
+                      <option value="1953">1953</option>
+                      <option value="1952">1952</option>
+                      <option value="1951">1951</option>
+                      <option value="1950">1950</option>
+                      <option value="1949">1949</option>
+                      <option value="1948">1948</option>
+                      <option value="1947">1947</option>
+                      <option value="1946">1946</option>
+                      <option value="1945">1945</option>
+                      <option value="1944">1944</option>
+                      <option value="1943">1943</option>
+                      <option value="1942">1942</option>
+                      <option value="1941">1941</option>
+                      <option value="1940">1940</option>
+                      <option value="1939">1939</option>
+                      <option value="1938">1938</option>
+                      <option value="1937">1937</option>
+                      <option value="1936">1936</option>
+                      <option value="1935">1935</option>
+                      <option value="1934">1934</option>
+                      <option value="1933">1933</option>
+                      <option value="1932">1932</option>
+                      <option value="1931">1931</option>
+                      <option value="1930">1930</option>
+                      <option value="1929">1929</option>
+                      <option value="1928">1928</option>
+                      <option value="1927">1927</option>
+                      <option value="1926">1926</option>
+                      <option value="1925">1925</option>
+                      <option value="1924">1924</option>
+                      <option value="1923">1923</option>
+                      <option value="1922">1922</option>
+                      <option value="1921">1921</option>
+                      <option value="1920">1920</option>
+                      <option value="1919">1919</option>
+                      <option value="1918">1918</option>
+                      <option value="1917">1917</option>
+                      <option value="1916">1916</option>
+                      <option value="1915">1915</option>
+                      <option value="1914">1914</option>
+                      <option value="1913">1913</option>
+                      <option value="1912">1912</option>
+                      <option value="1911">1911</option>
+                      <option value="1910">1910</option>
+                      <option value="1909">1909</option>
+                      <option value="1908">1908</option>
+                      <option value="1907">1907</option>
+                    </select>
+                    年
+                    <select class="date" id="selMonth1">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                      <option value="11">11</option>
+                      <option value="12">12</option>
+                    </select>
+                    月
+                    <select class="date" id="selDay1">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                      <option value="11">11</option>
+                      <option value="12">12</option>
+                      <option value="13">13</option>
+                      <option value="14">14</option>
+                      <option value="15">15</option>
+                      <option value="16">16</option>
+                      <option value="17">17</option>
+                      <option value="18">18</option>
+                      <option value="19">19</option>
+                      <option value="20">20</option>
+                      <option value="21">21</option>
+                      <option value="22">22</option>
+                      <option value="23">23</option>
+                      <option value="24">24</option>
+                      <option value="25">25</option>
+                      <option value="26">26</option>
+                      <option value="27">27</option>
+                      <option value="28">28</option>
+                      <option value="29">29</option>
+                      <option value="30">30</option>
+                      <option value="31">31</option>
+                    </select>
+                    日</span> <span class="gray ml20">隐私设置</span>
+                    <select name="lstBirthPrivacy" id="lstBirthPrivacy" class="ml10">
+                      <option value="3">显示年月日</option>
+                      <option value="2">显示月和日</option>
+                      <option value="1">显示年</option>
+                      <option selected="selected" value="0">不显示生日</option>
+                    </select></td>
+                </tr>
+                <tr>
+                  <td align="right">所在学校：</td>
+                  <td class="pl_r pl_border"><input style="display: none;" name="txtBirthday" id="txtBirthday" class="date" value="1990-12-6" type="text">
+                    <span class="jSelectDateBorder date" id="spanDate1">
+                    <select class="date" id="selYear1">
+                      <option value="2013">西安电子科技大学</option>
+                    </select>
+                    </span></td>
+                </tr>
+                <tr>
+                  <td align="right">所在学院：</td>
+                  <td class="pl_r pl_border"><input style="display: none;" name="txtBirthday" id="txtBirthday" class="date" value="1990-12-6" type="text">
+                    <span class="jSelectDateBorder date" id="spanDate1">
+                    <select class="date" id="selMonth1">
+                      <option value="12">软件学院</option>
+                    </select>
+                    </span></td>
+                </tr>
+                <tr>
+                  <td align="right">专业：</td>
+                  <td class="pl_r pl_border"><input style="display: none;" name="txtBirthday" id="txtBirthday" class="date" value="1990-12-6" type="text">
+                    <span class="jSelectDateBorder date" id="spanDate1">
+                    <select class="date" id="selDay1">
+                      <option value="1">软件工程</option>
+                    </select>
+                    </span></td>
+                </tr>
+                
+                <tr>
+                  <td align="right">教育程度：</td>
+                  <td><select name="lstDegree" id="lstDegree" class="option_bg">
+                      <option value="0">请选择</option>
+                      <option value="8">小学</option>
+                      <option value="9">初中</option>
+                      <option value="2">高中</option>
+                      <option value="3">技术学院</option>
+                      <option value="4">大专</option>
+                      <option selected="selected" value="5">学士</option>
+                      <option value="6">硕士</option>
+                      <option value="7">博士</option>
+                    </select>
+                    <span id="tip_degree"></span><br></td>
+                </tr>
+                
+                <tr>
+                  <td colspan="2"><div class="bar_sep"><img src="http://res.s.hjfile.cn/images/spacer.gif"></div>
+                    <div style="margin:15px 0 15px 0;background: #f7f7f7;padding:8px 10px;border-radius:7px;text-align: center;">填写以下信息，您将会得到更合适您的推荐信息，匹配也会更精确！</div></td>
+                </tr>
+                <tr>
+                  <td class="pl_l" align="right">我现在：</td>
+                  <td class="pl_r"><input value="1" name="chkGraduated" id="chkGraduated1" type="radio">
+                    <label for="chkGraduated1">已经工作</label>
+                    <input value="0" name="chkGraduated" id="chkGraduated0" class="ml10" checked="checked" type="radio">
+                    <label for="chkGraduated0">还是学生</label></td>
+                </tr>
+                <tr>
+                  <td class="pl_l pl_border" align="right">职业：</td>
+                  <td class="pl_r pl_border"><select name="lstVocation" id="lstVocation" style="width: 150px;">
+                      <option selected="selected" value="0">请选择</option>
+                      <option value="1">翻译/口译</option>
+                      <option value="2">教育/培训（教师）</option>
+                      <option value="3">软件开发/外包</option>
+                      <option value="4">互联网</option>
+                      <option value="5">商务外贸</option>
+                      <option value="6">文秘/助理</option>
+                      <option value="7">财会/审计</option>
+                      <option value="8">政府/公共服务</option>
+                      <option value="9">金融/保险/房地产</option>
+                      <option value="10">旅游/交通</option>
+                      <option value="11">招待</option>
+                      <option value="12">传媒/出版/娱乐</option>
+                      <option value="13">医疗/保健服务</option>
+                      <option value="14">零售</option>
+                      <option value="15">自由职业</option>
+                      <option value="16">学生</option>
+                      <option value="17">其他</option>
+                    </select></td>
+                </tr>
+                <tr>
+                  <td align="right" >我擅长：</td>
+                  <td style="padding-top:5px;"><span id="cblGoalList">
+                    <input id="cblGoalList_0" name="cblGoalList$0" type="checkbox">
+                    <label for="cblGoalList_0"> C语言</label>
+                    <input id="cblGoalList_1" name="cblGoalList$1" type="checkbox">
+                    <label for="cblGoalList_1"> C++</label>
+                    <input id="cblGoalList_2" name="cblGoalList$2" type="checkbox">
+                    <label for="cblGoalList_2"> Matlab</label>
+                    <input id="cblGoalList_3" name="cblGoalList$3" type="checkbox">
+                    <label for="cblGoalList_3"> 演讲</label>
+                    <input id="cblGoalList_4" name="cblGoalList$4" type="checkbox">
+                    <label for="cblGoalList_4"> 文档写作</label>
+                    </span></td>
+                </tr>
+                <tr>
+                  <td align="right" >我关注：</td>
+                  <td style="padding-top:5px;"><span id="cblGoalList">
+                    <input id="cblGoalList_0" name="cblGoalList$0" type="checkbox">
+                    <label for="cblGoalList_0"> 数模</label>
+                    <input id="cblGoalList_1" name="cblGoalList$1" type="checkbox">
+                    <label for="cblGoalList_1"> 国创</label>
+                    <input id="cblGoalList_2" name="cblGoalList$2" type="checkbox">
+                    <label for="cblGoalList_2"> 挑战杯</label>
+                    <input id="cblGoalList_3" name="cblGoalList$3" type="checkbox">
+                    <label for="cblGoalList_3"> ACM</label>
+                    <input id="cblGoalList_4" name="cblGoalList$4" type="checkbox">
+                    <label for="cblGoalList_4"> 好点子(idea)</label>
+                    <input id="cblGoalList_5" name="cblGoalList$5" type="checkbox">
+                    <label for="cblGoalList_5"> 外包项目</label>
+                    </span></td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td><br>
+                    
+                    <!--<br/>
+				 <a href="" class="big">跳过</a> &nbsp;&nbsp;  -->
+                    
+                    <input name="btnSaveProfile" value="保 存" id="btnSaveProfile" class="btn btnBlue" type="submit"></td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            <br>
+          </form>
+        </div>
+      </div>
+      <!-- InstanceEndEditable -->
+    </div>
+  </div>
+  <div class="footer-wrapper">
+    <div class="footer"> 
+      <a href="index.html">网站首页</a><span>|</span>
+      <a href="#">问题反馈</a><span>|</span>
+      <a href="#">帮助说明</a><span>|</span>
+      <a href="#">关于摇篮</a><span>|</span>
+      <a href="#">联系我们</a>
+    </div>
+  </div>
+</div>
+</div>
+</body>
+<!-- InstanceEnd --></html>
