@@ -7,3 +7,4 @@ task2-Web项目建议书、task3-Web项目需求分析请参看Documents文件�
 Web应用建模https://github.com/xdcradle/cradle/wiki/task4<br>
 Web应用架构https://github.com/xdcradle/cradle/wiki/task5<br>
 Web应用设计https://github.com/xdcradle/cradle/wiki/task6<br>
+小组内评分https://github.com/xdcradle/cradle/wiki/小组内评分<br>
