@@ -18,6 +18,9 @@ h1, h2, ul, li, p, img, dl, dt, dd { margin: 0; padding: 0; list-style: none; bo
 .bg-wrapper { width: 100%; overflow: hidden; min-width: 980px; margin: 0px auto; }
 .main-container { width: 980px; margin: 0px auto; overflow: hidden; }
 /*header*/
+.header { margin: 0px; padding: 0px; font-family: verdana, helvetica; border: 0px none; font-size: 12px; }
+.header table { margin: 0px; padding: 0px; font-family: verdana, helvetica; border: 0px none; font-size: 12px; }
+.header table td label { margin-right: 5px; }
 .header { height: 90px; }
 .header-left { height: 70px; width: 160px; float: left; padding-left: 10px; padding-top: 10px; }
 .header-right { height: 90px; width: 600px; float: left; margin-left: 100px; overflow: hidden; }
@@ -26,7 +29,7 @@ h1, h2, ul, li, p, img, dl, dt, dd { margin: 0; padding: 0; list-style: none; bo
 .search-input { width: 405px; height: 22px; font: 16px/22px arial; margin: 5px 0px 0px 7px; background: none repeat scroll 0% 0% rgb(255, 255, 255); outline: 0px none; }
 .search-btn-wrapper { display: inline-block; width: 97px; }
 #keyword { float: left; border: medium none; font-size: 16px; height: 26px; margin: 6px 0px 0px; width: 390px; padding-left: 4px; }
-#search-btn { float: left; font-size: 14px; height: 32px; width: 97px; font-weight: bold; cursor: pointer; background-color: #3CF; }
+#search-btn { float: left; font-size: 14px; height: 32px; width: 97px; font-weight: bold; cursor: pointer; background-color: #3CF; color: #FFF; }
 .option-wrapper { margin-top: 3px; display: inline-block; }
 .main { margin-top: 10px; padding-bottom: 20px; overflow: hidden; }
 .navi { height: 50px; width: 980px; margin-bottom: 3px; }
@@ -38,7 +41,7 @@ h1, h2, ul, li, p, img, dl, dt, dd { margin: 0; padding: 0; list-style: none; bo
 .navi ul li a:link, .navi ul li a:visited { font-size: 16px; font-weight: bold; color: #FFF; text-decoration: none; }
 .navi ul li a:hover { text-decoration: underline; }
 /*sidebar-left*/
-.sidebar-left { float: left; width: 159px; margin-right: 20px; border-right: 1px solid rgb(217, 220, 226); overflow: hidden; min-height:600px; }
+.sidebar-left { float: left; width: 159px; margin-right: 20px; border-right: 1px solid rgb(217, 220, 226); overflow: hidden; min-height: 800px; }
 .user-avatar-wrapper { height: 63px; }
 .avatar { float: left; width: 50px; height: 50px; overflow: hidden; }
 .user-info { width: 90px; height: 38px; margin-left: 60px; padding: 6px 0px; overflow-x: hidden; }
@@ -51,27 +54,48 @@ h1, h2, ul, li, p, img, dl, dt, dd { margin: 0; padding: 0; list-style: none; bo
 .user-apps .selected a:hover { background-color: #C2E2FC; }
 .sidebar-left .more { float: right; display: none; font-size: 12px; font-weight: normal; color: rgb(51, 102, 153); }
 /*content*/
-.content { float: left; width: 800px; overflow: hidden; }
-.content h2{ height:33px; background:url(../images/dotted.jpg) repeat-x bottom;	}
-.location { width: 540px; height: 21px; background: url(../images/dotted.jpg) bottom repeat-x; padding-top: 9px; margin-bottom: 20px; }
+.content { float: left; margin-right: 20px; width: 540px; min-height: 600px; overflow: hidden; }
+.location { width: 540px; height: 21px; background: url(../images/dotted.jpg) bottom repeat-x; padding-top: 9px; }
+.content h2 { height: 33px; background: url(../images/dotted.jpg) repeat-x bottom; }
+.prooject-detail { margin-top: 20px; width: 540px; overflow: hidden; }
 #app_cnt2 { width: 800px; float: right; margin-left: 20px; background: none repeat scroll 0% 0% white; }
 form { margin: 0px; padding: 0px; font-family: verdana, helvetica; border: 0px none; font-size: 12px; }
-.content table { margin: 0px; padding: 0px; font-family: verdana, helvetica; border: 0px none; font-size: 12px; }
-.content table td label{
-	margin-right:5px;
-}
+.content table { margin: 0px; padding: 0px; font-family: verdana, helvetica; border: 0px none; font-size: 14px; }
+.content table td label { margin-right: 5px; }
 #tbl_baseInfo tr { height: 40px; }
 td { color: rgb(73, 73, 73); }
 .dotted-line { width: 800px; height: 3px; background: url(../images/dotted.jpg) repeat-x center; }
-input.btnBlue {
-    background-color:#6CF;
-    border-width: 0px;
-    color: rgb(255, 255, 255);
-    cursor: pointer;
-    height: 28px;
-    font-size: 14px;
-    width: 90px;
-}
+input.btnBlue { background-color: #6CF; border-width: 0px; color: rgb(255, 255, 255); cursor: pointer; height: 32px; font-size: 14px; width: 110px; font-weight: bold; }
+.content .good-at ul li { position: relative; z-index: 12; line-height: 24px; margin: 2px 20px 2px 0px; height: 28px; color: rgb(128, 128, 128); overflow: hidden; float: left; }
+.content .good-at ul li span { color: rgb(255, 255, 255); background-color: rgb(67, 136, 206); border-radius: 4px 4px 4px 4px; padding: 2px 8px; }
+.content .today-new-wrap { width:540px; overflow:hidden; color: rgb(255, 255, 255); background-color:#EBEBEB; border-radius: 12px 12px 12px 12px; margin-top:30px;}
+.content .title-wrap { padding-left:20px; padding-top:15px;  }
+.content .title-wrap h2 { color:#606060; background:none; display:inline-block; }
+.content .title-wrap span{ float:right; color:#606060; margin-right:17px; margin-top:6px; }
+.content .new-list{ padding:10px; min-height:250px; width:516px; border:2px solid #EBEBEB; border-radius: 0px 0px 12px 12px; background-color:#FFF; }
+.content .new-list .new-list-name{ line-height:20px; font-size:14px; font-weight:bold; }
+.content .new-list ul li{ color:#666; overflow:hidden; background:url(../images/dotted.jpg) repeat-x bottom; margin-bottom:5px; }
+.content .new-list .study-info{ margin-top:10px; }
+.good-at-list ul li { position: relative; z-index: 12; line-height: 24px; margin: 2px 20px 2px 0px; height: 28px; color: rgb(128, 128, 128);  float: left;  }
+.good-at-list #no-bg li{ background:none; }
+.good-at-list ul li span { color: rgb(255, 255, 255); background-color: rgb(67, 136, 206); border-radius: 4px 4px 4px 4px; padding: 2px 8px; }
+/*sidebar-right*/
+.sidebar-right { float: left; width: 240px; overflow: hidden; }
+.sidebar-right .recommend { width: 240px; overflow: hidden; }
+.recommend-teammate, .recommend-project { padding-bottom: 10px; overflow: hidden; }
+.sidebar-right .recommend-header { width: 240px; overflow: hidden; }
+.sidebar-right .recommend-header a { display: block; float: right; margin-top: 14px; }
+.sidebar-right .teammate-avatar-container { overflow: hidden; width: 240px; }
+.sidebar-right .recommend h2 { }
+.recommend-header h4 { float: left; }
+.recommend-header a { float: right; }
+.teammate-avatar-container ul li { width: 50px; margin-right: 13px; float: left; display: inline-block; position: relative; }
+#last-avatar { margin-right: 0; }
+.teammate-avatar-container ul li { display: block; }
+.sidebar-right .project-container { overflow: hidden; }
+.project-container .selected { border: 0px none !important; }
+.project-container .item-title a { font-size: 14px; display: block; color: rgb(51, 51, 51); height: 16px; line-height: 16px; padding: 7px 10px 7px 5px; }
+.project-container .selected a:hover { background-color: #C2E2FC; }
 /*footer*/
 .footer-wrapper { margin: 0px auto; }
 .footer { height: 34px; width: 980px; line-height: 34px; text-align: center; margin: 0px auto 10px; background: url(../images/footer_bg.gif) repeat-x top center; }

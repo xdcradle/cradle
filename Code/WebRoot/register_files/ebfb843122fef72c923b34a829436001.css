@@ -129,7 +129,7 @@ a { star:expression(this.onFocus=this.blur()); /* for Ie*/
 #tips { line-height: 20px; color: #999; float: right; position: relative; background: url("/signup/static/images/tips.png") no-repeat; width: 120px; height: 50px; margin-right: 15px; margin-top: 32px; }
 #video { float: right; background: url("/signup/static/images/video.png") no-repeat; width: 116px; height: 82px; position: relative; top: -5px; }
 #content_title { width: 400px; height: 32px; margin-bottom: 5px; }
-/* ---- 欢迎页 ---- */
+/* ---- ---- */
 
 #step1, #step2, #step3 { width: 753px; height: 33px; margin: 20px 0px 20px 72px; }
 #step1 { background: url("/signup/static/images/step1.png") no-repeat; }
@@ -163,14 +163,14 @@ white-space: nowrap; padding-left: 29px; }
 }
 .gray { color: #999; }
 span.valid { background: url("/signup/static/images/icon_right.gif") no-repeat !important; width: 16px; height: 16px; display: none; margin-top: 9px; border: 0px !important; padding-left: 0px; }
-/* ----  邮件自动完成列表框 ---- */
+/* ----  ---- */
 .mail_out_box { line-height: 18px; border: 1px solid #ccc; color: #999; background: #fff; font-size: 12px; }
 .mail_list_box { line-height: 18px; border-bottom: 1px solid #fff; padding: 1px 5px 2px 5px; _padding-top: 2px; font-size: 12px; cursor: pointer; }
 .mail_focus_box { line-height: 18px; background: #f0f3f9; padding: 1px 5px 2px 5px; font-size: 12px; border-bottom: 1px solid #eee; cursor: pointer; color: #333; font-weight: bold; }
 .focus_box { line-height: 18px; background: #f0f3f9; padding: 1px 5px 2px 5px; font-size: 12px; border-bottom: 1px solid #eee; cursor: pointer; color: #333; font-weight: bold; }
 .mail_mark_box { line-height: 18px; color: #c00; }
 .mail_head { padding-left: 5px; }
-/* ----  提示框样式 ---- */
+/* ----  ---- */
 
 #reg_info label { color: #ccc; position: absolute; z-index: 1; font-size: 14px; padding-left: 13px; line-height: 35px; left: 0; cursor: text; }
 .input_hover { background: url("/signup/static/images/bg_input_hover.gif") no-repeat !important; width: 272px; height: 37px; }
@@ -201,7 +201,7 @@ a.site_gray:active { color: #FF6600; text-decoration: underline }
 .pnl_pwdStrong_1 { background: url(/signup/static/images/bg_pwdStrong.gif) 0px -6px no-repeat; }
 .pnl_pwdStrong_2 { background: url(/signup/static/images/bg_pwdStrong.gif) 0px -12px no-repeat; }
 .pnl_pwdStrong_3 { background: url(/signup/static/images/bg_pwdStrong.gif) 0px -18px no-repeat; }
-/*设置用户名密码页面*/
+/**/
 .icon_i, .icon_mail_i { height: 42px; width: 20px; background: url(/signup/static/images/icon_i.gif) 0 10px no-repeat; display: block; margin-left: 10px; }
 .icon_mail_i { background: url(/signup/static/images/icon_mailtips.gif) 0 16px no-repeat; position: absolute; top: -11px; right: 284px; }
 .icon_i img, .icon_mail_i img { margin: 0 0 0 23px; }
@@ -226,7 +226,7 @@ left: 0; }
 .area_list .btn_choose, .area_list .btn_unchoose { height: 18px; width: 18px; display: block; position: absolute; left: 20px; top: 13px; }
 .area_list .btn_choose { background: url(/signup/static/images/checkbox.gif) no-repeat; }
 .area_list .btn_unchoose { background: url(/signup/static/images/checkbox.gif) -30px 0px no-repeat; }
-/*感兴趣领域设置*/
+/*���*/
 .skill_list { padding: 20px 9px 10px 9px; width: 942px }
 .skill_list li { position: relative; float: left; cursor: pointer; width: 94px; height: 126px; display: inline-block; margin: 0 0 5px 10px; }
 .skill_list li a { text-decoration: none; }
@@ -255,7 +255,7 @@ zoom: 1; border: 1px solid rgb(223, 223, 223); padding: 4px 7px; color: #666; te
 .checkbox.selected { background: url(/signup/static/images/pic_all.gif) -90px -27px no-repeat; }
 .notebook_list .wordbook { text-decoration: none; color: #707070; font-family: Microsoft YaHei; font-size: 16px; background: url(/signup/static/images/btn_white_wordbook.png) no-repeat; height: 20px; display: block; width: 150px; padding: 14px 0; font-size: 14px; color: #707086; line-height: 19px; overflow: hidden; white-space: nowrap; word-wrap: break-word; }
 .notebook_list .wordbook span { margin: 0 10px; width: 130px; display: block; height: 20px; white-space: nowrap; text-overflow: ellipsis; word-wrap: break-word; overflow: hidden; text-align: center; }
-/*邮箱激活页面*/
+/*邮箱濴�页面*/
 .mail_active_box { background: url(/signup/static/images/bg_envelope.gif) center top no-repeat; line-height: 28px; text-align: center; height: 441px; padding: 0 30px; padding-top: 50px; width: 538px; margin: 0 auto; }
 .enter_btn { position: relative; left: 50%; float: left; margin-top: 20px; }
 .btn_enter { position: relative; right: 50%; float: left; }
@@ -355,9 +355,10 @@ img.headimg { margin: 0 auto; }
 .rollbar-path-vertical, .rollbar-path-horizontal, .rollbar-handle { -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; }
 .recommend_text { padding: 0 0 0 22px; height: 40px; line-height: 40px; }
 .mail_actived_tips { background: #FCFDEB; height: 36px; border: 1px solid #FCF7C1; margin: 0 auto; width: 870px; padding: 17px 10px 0 20px; }
+.err_msg{ display:block; margin-top:5px; margin-bottom:5px; color:red; line-height: 30px; height:30px; width:340px;}
 .login_text { right: 30px; top: 58px; position: absolute; }
 .login_text a { color: #006699; }
-.post_box { height: 60px; width: 345px; line-height: 100px; margin: 5px 0 0 90px; }
+.post_box { overflow:hidden; width: 345px; line-height: 100px; margin: 5px 0 0 90px; }
 .btn_reg_position { margin-top: 8px; }
 #winmedal-box { position: fixed; _position: absolute; -moz-border-radius: 5px; -webkit-border-radius: 5px; -khtml-border-radius: 5px; border: 0; _border: 2px solid #97ACD2; background: url(/signup/static/images/transBG.png) no-repeat; _background: white; text-align: left; left: 54%; top: 50%; margin-top: -130px; margin-left: -196px; z-index: 999999; }
 #winmedal-content-border { margin: 5px; position: relative; top: -1px; background: white; line-height: 22px; padding: 10px 0 10px 5px; border-radius: 3px; }
@@ -385,7 +386,7 @@ text-align: center; color: #666; float: left; }
 .skill_level_edit .borderb { border-bottom: 1px dotted #ccc; padding: 15px 0; margin-bottom: 15px; height: 20px; }
 .active_tips { color: #69BB05; font-family: "Microsoft yahei"; font-size: 20px; }
 .green { color: #69BB05; }
-/*国际化样式调整*/
+/*国际化样式调�*/
 .de_l .vali_code.hint { width: 170px; }
 .de_l #reg_info td { width: 435px; }
 .en_l a.btn_uploadFace, .en_l a.btn_uploadFace:hover, .de_l a.btn_uploadFace, .de_l a.btn_uploadFace:hover, .fr_l a.btn_uploadFace, .fr_l a.btn_uploadFace:hover, .kr_l a.btn_uploadFace, .kr_l a.btn_uploadFace:hover, .jp_l a.btn_uploadFace, .jp_l a.btn_uploadFace:hover { background-position: 0 -64px; width: 40px; }
