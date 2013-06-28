@@ -9,7 +9,7 @@ import java.sql.*;
 
 @WebServlet(name="register"
 	, urlPatterns={"/register"})
-public class RegisterServlet extends HttpServlet
+public class RegisterServ extends HttpServlet
 {
 	//响应客户端请求的方法
 	public void service(HttpServletRequest request,HttpServletResponse response)
@@ -19,9 +19,11 @@ public class RegisterServlet extends HttpServlet
 		//Servlet本身并不输出响应到客户端，因此必须将请求转发
 		RequestDispatcher rd;
 		//获取请求参数
+		request.setCharacterEncoding("GBK");//避免request.getParameter中文出现乱码
 		String req_user_id = request.getParameter("user_id");
 		String req_pwd = request.getParameter("password");
 		String req_email=request.getParameter("email");
+		String req_true_name=request.getParameter("true_name");
 		try
 		{
 			//Servlet本身，并不执行任何的业务逻辑处理，它调用JavaBean处理用户请求
@@ -39,7 +41,7 @@ public class RegisterServlet extends HttpServlet
 			else
 			{
 				//用户名不存在，可以使用此用户名注册
-				dd.modify("INSERT INTO user VALUES(?,?,?)", req_user_id,req_pwd,req_email);
+				dd.modify("INSERT INTO user(user_id,password,email,true_name) VALUES(?,?,?,?)", req_user_id,req_pwd,req_email,req_true_name);
 				//dd.closeConn();
 				//设置session属性，跟踪用户会话状态
 				request.setAttribute("user_id" , req_user_id);

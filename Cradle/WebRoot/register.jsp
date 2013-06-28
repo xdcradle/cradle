@@ -13,7 +13,6 @@ if (request.getAttribute("err") != null)
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="shortcut icon" href="http://pass.hujiang.com/favicon.ico?20111230" type="image/x-icon">
     <title>加入摇篮网</title>
     <link rel="stylesheet" href="register_files/ebfb843122fef72c923b34a829436001.css" type="text/css">
@@ -147,6 +146,17 @@ if (request.getAttribute("err") != null)
 										<input name="email" id="mail" tabindex="4" class="text_field" maxlength="50" style="ime-mode:disabled" autocomplete="off" type="text">
 									</div></span>
 									<span class="hint hide">输入你常用的电子邮箱</span>
+									
+								</td>
+							</tr>
+							<tr>
+								<td>
+                                    <div class="input_wrap">
+									    <label for="user_id">真实姓名</label>
+										<input name="true_name" id="name" tabindex="5" class="text_field" maxlength="12" autocomplete="off" type="text">
+									</div>
+									<span class="hide hint">摇篮网是一个基于真实姓名进行交友和匹配的平台，注册后不可修改！</span>
+									<span class="error valid"></span>
 									
 								</td>
 							</tr>							

@@ -39,7 +39,7 @@ span.hide { display: none; }
         <div id="login">
           <div class="user_name input_box" id="user_name">
             <label for="txtUsername" class="tips"> 用户名/邮箱/手机号</label>
-            <input name="txtUsername" id="txtUsername" tabindex="1" maxlength="50" value="huangjuebest" type="text">
+            <input name="txtUsername" id="txtUsername" tabindex="1" maxlength="50" type="text">
             <span style="display: none;" for="txtUsername" generated="true" class="hide error visibshow" id="error_username"> 帐号不存在</span> </div>
           <div class="password input_box" id="password">
             <label for="txtPassword" class="tips"> 密码</label>
