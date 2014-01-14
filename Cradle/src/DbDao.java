@@ -9,11 +9,7 @@ public class DbDao
 	private String password;
 	public DbDao()
 	{
-<<<<<<< HEAD
-		//modify by notepad++
-=======
 		//modify via GitHub web page
->>>>>>> 3d63b6c564336d0a2ead60ddf51572fb74595def
 	}
 	public DbDao(String driver , String url 
 		, String username , String pass)
