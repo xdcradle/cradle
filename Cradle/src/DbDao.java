@@ -9,6 +9,7 @@ public class DbDao
 	private String password;
 	public DbDao()
 	{
+		//add a line by web page
 	}
 	public DbDao(String driver , String url 
 		, String username , String pass)
