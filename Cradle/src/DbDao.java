@@ -9,6 +9,7 @@ public class DbDao
 	private String password;
 	public DbDao()
 	{
+		//modify via GitHub web page
 	}
 	public DbDao(String driver , String url 
 		, String username , String pass)
@@ -18,7 +19,7 @@ public class DbDao
 		this.user_id = username;
 		this.password = pass; 
 	}
-	//ÏÂÃæÊÇ¸÷¸ö³ÉÔ±ÊôÐÔµÄsetterºÍgetter·½·¨
+	//ï¿½ï¿½ï¿½ï¿½ï¿½Ç¸ï¿½ï¿½ï¿½ï¿½ï¿½Ô±ï¿½ï¿½ï¿½Ôµï¿½setterï¿½ï¿½getterï¿½ï¿½ï¿½ï¿½
 	public void setDriver(String driver) {
 		this.driver = driver; 
 	}
@@ -43,7 +44,7 @@ public class DbDao
 	public String getPass() {
 		return (this.password); 
 	}
-	//»ñÈ¡Êý¾Ý¿âÁ¬½Ó
+	//ï¿½ï¿½È¡ï¿½ï¿½ï¿½Ý¿ï¿½ï¿½ï¿½ï¿½ï¿½
 	public Connection getConnection() throws Exception
 	{
 		if (conn == null)
@@ -53,7 +54,7 @@ public class DbDao
 		}
 		return conn;
 	}
-	//²åÈë¼ÇÂ¼
+	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼
 	public boolean insert(String sql , Object... args)
 		throws Exception
 	{
@@ -69,7 +70,7 @@ public class DbDao
 		pstmt.close();
 		return true;
 	}
-	//Ö´ÐÐ²éÑ¯
+	//Ö´ï¿½Ð²ï¿½Ñ¯
 	public ResultSet query(String sql , Object... args)
 		throws Exception
 	{
@@ -80,7 +81,7 @@ public class DbDao
 		}
 		return pstmt.executeQuery();
 	}
-	//Ö´ÐÐÐÞ¸Ä
+	//Ö´ï¿½ï¿½ï¿½Þ¸ï¿½
 	public void modify(String sql , Object... args)
 		throws Exception
 	{
@@ -92,7 +93,7 @@ public class DbDao
 		pstmt.executeUpdate();
 		pstmt.close();
 	}
-	//¹Ø±ÕÊý¾Ý¿âÁ¬½ÓµÄ·½·¨
+	//ï¿½Ø±ï¿½ï¿½ï¿½ï¿½Ý¿ï¿½ï¿½ï¿½ï¿½ÓµÄ·ï¿½ï¿½ï¿½
 	public void closeConn()
 		throws Exception
 	{
